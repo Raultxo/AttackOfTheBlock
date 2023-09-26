@@ -251,11 +251,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1810299610029711623, guid: cbab3b9d79caf904c82c0d672b908cf1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.1
+      value: -5.15
       objectReference: {fileID: 0}
     - target: {fileID: 1810299610029711623, guid: cbab3b9d79caf904c82c0d672b908cf1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.98
+      value: 3.19
       objectReference: {fileID: 0}
     - target: {fileID: 1810299610029711623, guid: cbab3b9d79caf904c82c0d672b908cf1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -701,7 +701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bola: {fileID: 167197868618643760, guid: cbab3b9d79caf904c82c0d672b908cf1, type: 3}
-  tiempo: 0.0001
+  jugador: {fileID: 708309685105341339, guid: 9055aba68baf24d4ba8ac4a233be9c2b, type: 3}
 --- !u!4 &1287046817
 Transform:
   m_ObjectHideFlags: 0
