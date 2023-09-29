@@ -3,12 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
- public class MouseMove2D : MonoBehaviour {
+public class MouseMove2D : MonoBehaviour {
   
      private Vector3 mousePosition;
      private float moveSpeed = 0.075f;
-  
+     [SerializeField] private GameObject powerup;
+     
      // Use this for initialization
      void Start ()
      {
@@ -27,13 +29,26 @@ using UnityEngine;
 
      private void OnCollisionEnter2D(Collision2D other)
      {
-         // Si se choca con un enemigo, se acaba el juego
-         if (other.gameObject.tag == "Enemy")
-         {
-             Application.Quit();
+         switch (other.gameObject.tag)
+         { 
+             // Si se choca con un enemigo, se acaba el juego
+             case "Enemy":
+                 Application.Quit();
+                 break;
+             // Si se choca con un powerup, destruye los enemigos cercanos
+             case "Powerup":
+
+                 Destroy(other.gameObject);
+                 GameObject[] enemigos = GameObject.FindGameObjectsWithTag("Enemy");
+                 for (int i = 0; i < enemigos.Length; i++)
+                 {
+                     if (Vector2.Distance(enemigos[i].transform.position, transform.position) < 5f)
+                     {
+                         Destroy(enemigos[i]);
+                     }
+                 }
+                 break;
          }
-         
-         
      }
  }
   

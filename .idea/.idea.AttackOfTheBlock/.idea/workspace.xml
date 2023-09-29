@@ -12,6 +12,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerupScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -102,6 +103,7 @@
       <workItem from="1695741149324" duration="682000" />
       <workItem from="1695746527002" duration="1420000" />
       <workItem from="1695748095366" duration="551000" />
+      <workItem from="1695996503201" duration="5259000" />
     </task>
     <servers />
   </component>

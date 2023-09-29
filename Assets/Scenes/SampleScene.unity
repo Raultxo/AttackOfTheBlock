@@ -702,6 +702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bola: {fileID: 167197868618643760, guid: cbab3b9d79caf904c82c0d672b908cf1, type: 3}
   jugador: {fileID: 708309685105341339, guid: 9055aba68baf24d4ba8ac4a233be9c2b, type: 3}
+  powerup: {fileID: 5344966740399306395, guid: 51a0968dd07e42240a1fc35e36871350, type: 3}
 --- !u!4 &1287046817
 Transform:
   m_ObjectHideFlags: 0
@@ -1029,6 +1030,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Borde
       objectReference: {fileID: 0}
+    - target: {fileID: 8144027691172808405, guid: b75932af26470bd4ba299294e33d220e, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1046,6 +1051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1210636733720018162, guid: 9055aba68baf24d4ba8ac4a233be9c2b, type: 3}
+      propertyPath: powerup
+      value: 
+      objectReference: {fileID: 5344966740399306395, guid: 51a0968dd07e42240a1fc35e36871350, type: 3}
     - target: {fileID: 2089697447279377343, guid: 9055aba68baf24d4ba8ac4a233be9c2b, type: 3}
       propertyPath: m_Mass
       value: 50
