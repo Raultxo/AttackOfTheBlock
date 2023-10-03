@@ -46,7 +46,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Desktop/.Cosas/AttackOfTheBlock\AttackOfTheBlock.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/.Cosas/AttackOfTheBlock/AttackOfTheBlock.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Aula129\Desktop\.Cosas\AttackOfTheBlock" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -104,6 +104,9 @@
       <workItem from="1695746527002" duration="1420000" />
       <workItem from="1695748095366" duration="551000" />
       <workItem from="1695996503201" duration="5259000" />
+      <workItem from="1696266889330" duration="288000" />
+      <workItem from="1696267224164" duration="4764000" />
+      <workItem from="1696346280317" duration="2864000" />
     </task>
     <servers />
   </component>

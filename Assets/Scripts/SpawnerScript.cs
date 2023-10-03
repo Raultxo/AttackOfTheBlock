@@ -10,7 +10,7 @@ public class SpawnerScript : MonoBehaviour
     [SerializeField] private GameObject bola;
     [SerializeField] private GameObject jugador;
     [SerializeField] private GameObject powerup;
-
+    
     private float tiempoEnemy = 2f;
     private float tiempoPower = 15f;
     
@@ -18,7 +18,7 @@ public class SpawnerScript : MonoBehaviour
     {
         // Spawnea un enemigo cada 2 segundos
         InvokeRepeating("SpawnEnemy", tiempoEnemy, tiempoEnemy);
-        // v1.1 Añadido metodo para spawnear un powerup cada 15 segundos
+        // Spawnea un powerup cada 15 segundos
         InvokeRepeating("SpawnPower", tiempoPower,tiempoPower);
     }
 

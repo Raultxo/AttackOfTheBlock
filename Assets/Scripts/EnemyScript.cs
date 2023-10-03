@@ -7,12 +7,12 @@ using Random = UnityEngine.Random;
 
 public class EnemyScript : MonoBehaviour
 {
+    [SerializeField] private AudioClip colisionAudio;
+    
     private int seed;
     private Rigidbody2D rigidbody2d;
-
-    [SerializeField] private AudioClip colisionAudio;
-
     private AudioSource _audioSource;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +35,7 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Controlar que si los enemigos se salen del area de juego desaparecen
         if (Vector2.Distance(transform.position, new Vector2(0, 0)) > 20)
         {
             Destroy(gameObject);
@@ -42,6 +43,7 @@ public class EnemyScript : MonoBehaviour
 
     }
 
+    // Cada vez que el enemigo colisiona con una pared suena un audio
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Wall"))
